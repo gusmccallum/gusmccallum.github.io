@@ -1094,45 +1094,7 @@
 				padding-bottom: 1px;
 			}
 
-			#navToggle {
-				@include vendor('backface-visibility', 'hidden');
-				@include vendor('transition', 'transform #{_duration(navPanel)} ease');
-				display: block;
-				height: 44px;
-				left: 0;
-				position: fixed;
-				top: 0;
-				width: 100%;
-				z-index: _misc(z-index-base) + 1;
 
-				.toggle {
-					@include icon(false, solid);
-					width: 70px;
-					height: 50px;
-					opacity: 0.35;
-
-					&:before {
-						display: inline-block;
-						text-decoration: none;
-						position: absolute;
-						left: 6px;
-						top: 6px;
-						background: rgba(0, 0, 0, 0.5);
-						width: 58px;
-						height: 38px;
-						border-radius: 6px;
-						content: '\f0c9';
-						color: #fff;
-						text-align: center;
-						line-height: 38px;
-						font-size: 20px;
-					}
-
-					&:active {
-						opacity: 0.75;
-					}
-				}
-			}
 
 			#navPanel {
 				@include vendor('backface-visibility', 'hidden');
